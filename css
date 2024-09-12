@@ -1,0 +1,377 @@
+/* FONTS HERE */
+
+@font-face {
+	font-family: basiic;
+	src: url(https://files.catbox.moe/jtvuhg.ttf);
+}
+
+.basiic {
+	font-family: 'basiic';
+}
+
+@font-face {
+    font-family: 'porkys';
+    src: url(https://files.catbox.moe/tz1sis.TTF);
+}
+
+.porkys {
+    font-family: 'porkys'; 
+}
+
+@font-face {
+  font-family: 'yoster'
+  src: url(cupidscorner.neocities.org/yoster.ttf);
+}
+
+.yoster {
+  font-family: 'yoster'; }
+
+ smaller {
+   color: #fff; 
+}
+
+@font-face {
+font-family: 'magica';
+src: url(https://static.tumblr.com/p6yopnt/Qkiqnu0r5/theheart.ttf);
+}
+ 
+.magica {
+font-family: magica;
+}
+/* CUSTOM CURSOR */ 
+
+* {cursor: url(https://cur.cursors-4u.net/anime/ani-1/ani196.png), auto !important;} 
+
+/* BG AND HEADER IMAGES */
+
+:root {
+--header-image: url('https://i.imgur.com/xsC1gux.gif');
+--body-bg-image: url('https://syntheticfruits.neocities.org/backgrounds/pinkback.gif');
+
+/* DEFAULT COLORS */
+--content: #fff0f7;
+}
+
+/*SIDEBAR BRACKETS QUOTE*/
+
+.brackets {
+border: 4px #E750BB solid;
+border-width: 0 3px 0 3px;
+border-radius:10px;
+padding: 0px 2px 0px 2px;
+width:150px; 
+height:50px;
+overflow-y:auto;
+font-family: 'basiic'; 
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: smaller;
+background-color: white;
+}
+
+/*BACKGROUND DETAILS*/
+
+.bg {
+background-image:url(https://syntheticfruits.neocities.org/backgrounds/pinkback.gif);
+background-size:100px;
+
+padding:12px; /* make number bigger/smaller for a bigger/smaller border */
+border:1px solid black;
+width:fit-content;
+
+}
+
+/* INNER CONTENT BOX */
+
+.inner {
+background: rgb(255,255,255,80%);
+padding:20px;
+align-contents: center;
+height:fit-content;
+width:500px;
+font-family: 'basiic';
+overflow-y:auto;
+margin: auto;
+}
+
+/* PAGEDOLL */
+
+#pagedoll {
+  position: fixed;
+  bottom: 0px;
+  right:0px;
+}
+
+/* PINKY TEXT */
+
+.pinky {
+border-width:8px;
+border-style:solid;
+border-image: url("https://i.ibb.co/h1Q3bFn/83-B27704-CEA1-4-B8-F-BF79-90-D624-EDC6-F6.png") 8 fill round;
+}
+
+/* BODY*/
+
+body {
+font-family: 'basiic';
+margin: 0;
+background-color: #fff;
+image-height: 80px;
+background-image: var(--body-bg-image);
+background-attachment: fixed;
+
+}
+
+* {
+box-sizing: border-box;
+}
+
+/* MAIN LAYOUT */
+#container {
+  max-width: 900px;
+  margin: 0 auto;
+ }
+
+/* ALL LINKS EXCEPT NAV */
+#container a {
+color: #fff0f7;
+font-weight: bold;
+}
+
+/* HEADER */
+#header {
+width: 100%;
+background-color: #fff0f7;
+text-align: center;
+background-image: var(--header-image);
+background-size: height:317px
+ }
+
+/* PINK WAVE SETTINGS */
+.pinkwave{
+  font-size: 4.7em;
+  font-weight: bold;
+  font-family: porkys;
+  color: transparent;
+  background: url("https://files.catbox.moe/db8ne8.png") repeat-x #fff;
+  background-size: auto;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200% 100%;
+  background-position-x: 0;
+  background-position-y: 2em;
+  -webkit-transition: background-position-y 0.6s ease;
+  transition: background-position-y 0.6s ease;
+  -webkit-animation: waveAnimation 4s infinite linear;
+  animation: waveAnimation 4s infinite linear;
+filter: drop-shadow(1px 1px #e3569e) drop-shadow(-2px 2px #e3569e)  drop-shadow(-1px -1px white) drop-shadow(1px 1px white) drop-shadow(-1px 1px white) drop-shadow(1px -1px white) drop-shadow(-1px -1px white) ;
+background-position-x: 0;
+  background-position-y: 0;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@keyframes waveAnimation{
+  from {
+    background-position-x: 0%;
+  }
+  to {
+    background-position-x: 200%;
+  }
+ 
+}
+
+/* NAVIGATION */
+#navbar {
+height: 40px;
+background-color: #fa78a8;
+width: 100%;
+}
+
+#navbar ul {
+display: flex;
+padding: 0;
+margin: 0;
+list-style-type: none;
+justify-content: space-evenly;
+}
+
+#navbar li {
+padding-top: 10px;
+}
+
+/* NAV LINKS */
+#navbar li a {
+display: inline-block; 
+transition: .2s ease; 
+color: #fff2f6;
+font-weight: 800;
+text-decoration: none;
+}
+
+/* NAV LINKS HOVER */
+#navbar li a:hover {
+color: #E750BB;
+text-decoration: underline;
+transform: translateY(-20%); 
+}
+
+/* FLEX BOX */
+#flex {
+display: flex;
+}
+
+/* MAIN BOX OVERLAY */
+.overlaybox{
+  background-color: white;
+  opacity: 80%;
+  justify-content: center;
+  text-align: center;
+  font-family: 'basiic';
+  max-width: 200px;
+  
+}
+
+
+/* SIDEBARS*/
+
+#leftSidebar {
+background-image: url(https://i.imgur.com/JfH8RtI.png);
+width: 200px;
+padding: 20px;
+font-size: smaller;
+margin-right: 10px;
+border-radius: 25px;
+border: 3px dotted #E750BB; 
+justify-content: center;
+}
+
+#rightSidebar {
+background-image: url(https://i.imgur.com/JfH8RtI.png);
+width: 200px;
+padding: 20px;
+font-size: smaller;
+margin-left: 10px;
+border-radius: 25px;
+border: 3px dotted #E750BB; 
+align-items: center;
+justify-content: center;
+}
+
+
+/* MAIN CONTENT AREA */
+main {
+background-image: url(https://i.imgur.com/LldIcb4.png);
+flex: 1;
+padding: 20px;
+order: 2;
+background-height: 80px;
+justify-content: center;
+border: 3px solid #EB76A7; 
+border-radius: 25px;
+background-attachment: fixed;
+margin: auto;
+}
+
+
+/* MAIN ORDER */
+
+#leftSidebar {
+order: 1;
+}
+
+#rightSidebar {
+order: 3;
+}
+
+
+/* FOOTER */
+footer {
+background-color: #fa78a8;
+width: 100%;
+height: 40px;
+padding: 10px;
+text-align: center;
+}
+
+/* HEADER TEXT */
+h1,
+h2,
+h3 {
+color: #fff;
+}
+h1 {
+font-size: 25px;
+color: #fff
+}
+
+/* BOLD TEXT */
+strong {
+color: #E750BB;
+}
+
+/* EXTRA BOX */
+.box {
+color: #ffffff
+border: 3px solid #E750BB;
+opacity: 85%;
+justify-content: center;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+
+
+
+  @mixin cc(){
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* BELOW THIS POINT IS MEDIA QUERY */
+/*
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+@media only screen and (max-width: 800px) {
+#flex {
+flex-wrap: wrap;
+}
+
+aside {
+width: 100%;
+}
+
+/* MOBILE ORDER */
+main {
+order: 1;
+}
+
+#leftSidebar {
+order: 2;
+}
+
+#rightSidebar {
+order: 3;
+}
+
+#navbar ul {
+flex-wrap: wrap;
+}
+
+
+
+
+
+
+
